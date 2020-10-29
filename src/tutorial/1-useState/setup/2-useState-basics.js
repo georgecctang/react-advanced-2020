@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
 
 const UseStateBasics = () => {
-  return <h2>useState basic example</h2>;
+  const [text, setText] = useState('random title');
+  const handleClick = () => {
+    setText(text === 'random title' ? 'hello' : 'random title')
+  }
+
+  return (
+    <>
+     <h2>{text}</h2>
+     <button className='btn' onClick={handleClick}>change title</button>
+    </>
+    );
 };
 
 export default UseStateBasics;
