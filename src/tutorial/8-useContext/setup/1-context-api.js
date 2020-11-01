@@ -7,8 +7,6 @@ const PersonContext = React.createContext();
 
 // two components - Provider, Consumer
 
-
-
 const ContextAPI = () => {
   const [people, setPeople] = useState(data);
   const removePerson = (id) => {
@@ -18,7 +16,7 @@ const ContextAPI = () => {
   };
   return (
     <PersonContext.Provider value={{removePerson, people}}>
-      <h3>prop drilling</h3>
+      <h3>Context API / useContext</h3>
       <List />
     </PersonContext.Provider>
   );
