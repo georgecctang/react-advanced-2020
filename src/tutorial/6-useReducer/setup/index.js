@@ -1,7 +1,7 @@
 import React, { useState, useReducer } from 'react';
 import Modal from './Modal';
 import { reducer } from './reducer';
-import { data } from '../../../data';
+// import { data } from '../../../data';
 
 // reducer function
 
